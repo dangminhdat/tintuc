@@ -1,0 +1,23 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.menu1 a {
+    color: #fff;
+}
+
+body{
+	background: rgb(199, 195, 195)!important;
+}
+.menu1 {
+    background: #337ab7!important;
+    border-color: #337ab7!important;
+}
+
+a#del_list_cate {
+    color: #fff;
+}
+.menu1{
+	margin-top: -12px;
+}

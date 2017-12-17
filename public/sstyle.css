@@ -1,0 +1,456 @@
+*{margin: 0; padding: 0;}
+
+.nut-messenger {
+    width: 52px;
+    background: #2c94da;
+    position: fixed;
+    border-radius: 50%;
+    color: #fff;
+    right: 108px;
+    padding: 1px 12px;
+    bottom: 5px;
+    z-index: 100000;
+    cursor: pointer;
+    display: none;
+    font-size: 28px;
+}
+
+span.fa.fa-close.float-xs-right {
+    margin: 4px;
+}
+span.fa.fa-close.float-xs-right:hover{
+    cursor: pointer;
+    color: #fff;
+}
+
+.messenger .msg-user {
+    text-align: right;
+    margin: 0 10px;
+}
+
+.messenger .msg-user span {
+    line-height: 16px;
+    font-size: 10px;
+    font-style: italic;
+}
+
+.messenger .msg-user p {
+    line-height: 16px;
+    color: #80c405;
+    word-wrap: break-word;
+    font-family: sans-serif;
+    margin: 0;
+}
+.messenger .msg{
+    margin: 0 10px;
+}
+
+.messenger .msg p {
+    line-height: 16px;
+    color: #80c405;
+    word-wrap: break-word;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.messenger .msg span {
+    line-height: 16px;
+    font-size: 10px;
+    font-style: italic;
+}
+.messenger > p:first-child{
+    background: #e4e3ec;
+    color: #0036f2;
+    margin: 0;
+    padding: 7px 21px;
+    border-radius: 4px;
+    border: 1px solid #3421b4;
+}
+.messenger{
+    /* display: none; */
+    position: fixed;
+    z-index: 1000000;
+    right: 10px;
+    bottom: -15px;
+}
+.messenger .main-chat{
+    overflow-y: scroll;
+    width: 300px;
+    height: 300px;
+    background: #f3dbdb;
+    border: 1px solid #e6b5b5;
+    border-radius: 3px;
+}
+.noidung .ndp2 .fb-like.fb_iframe_widget {
+    padding: 4px;
+}
+
+.noidungphu .ndp2 {
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+
+.comment .media p {
+    font-size: 15px;
+}
+
+.comment button.btn.btn-default {
+    margin: 10px 0 10px 130px;
+    padding: 11px;
+}
+
+.comment span.alert.alert-success {
+    padding: 10px;
+    margin-left: 14px;
+}
+
+.comment .form-inline {
+    margin-top: 12px;
+}
+
+.comment span.alert.alert-danger {
+    margin: 16px;
+    padding: 1px 14px;
+}
+
+.form-group button {
+    margin-top: 10px;
+}
+
+.comment {
+    border: 1px solid #ccc;
+    padding-top: 19px;
+    margin-top: 10px;
+}
+
+.nd1,.nd2 {
+    border: 1px solid #ccc;
+    overflow: hidden;
+}
+
+.nd3 {
+    /* border: 1px solid #ccc; */
+}
+
+.scroll{
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 28px;
+    background: #14aaf2;
+    width: 50px;
+    cursor: pointer;
+    padding: 17px;
+    z-index: 99999999;
+}
+.comment .media {margin: -17px 0px 0 -17px;padding-top: 26px;border-bottom: 1px solid #ccc;}
+
+.chitiet .chitietbody {
+    margin: 12px 0;
+}
+
+.chitiet .chitietdau h3 {
+    font-size: 31px;
+}
+
+.chitiet .chitietdau small {
+    margin: 5px;
+}
+.chitiet img{
+    width: 80%!important;
+}
+
+.chitietbody img {
+    max-width: 100%;
+    height: auto;
+    margin-left: 64px;
+}
+.chitiet {
+    padding: 10px;
+    text-align: justify;
+    border: 1px solid #ccc;
+}
+
+.chitiet .chitiettieude {
+    margin: 12px 0px;
+}
+
+form.form-inline.navbar-form.float-lg-right {
+    margin-left: -9px;
+}
+
+.logo .col-xs-3 img {
+    margin-left: -20px;
+}
+
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #0c0c0c!important;
+}
+
+button.btn.btn-default.hidden-md-up {
+    margin: 6px;
+}
+
+.navbar .menu1 ul.navbar-nav li.nav-item a.nav-link {
+    font-size: 20px;
+    color: #161616;
+    font-weight: bold;
+}
+
+
+.footer .content a {
+    display: inline-block;
+    padding: 9px 7px;
+}
+
+.footer .content {
+    padding-top: 16px;
+}
+
+.footer .content p {
+    font-size: 22px;
+
+}
+
+.footer ul {
+    list-style: none;
+    margin-top: -5px;
+    padding-left: 10px;
+    font-size: 21px;
+}
+
+.footer ul li {
+    padding: 7px;
+}
+
+.footer .title {
+    border-bottom: 1px solid #2c94da;
+    padding: 9px 24px;
+}
+
+.footer {
+    border: 1px solid #2c94da;
+    background: #333333;
+    color: white;
+    margin-top: 10px;
+}
+
+.nd2 {
+    margin-top: 20px;
+    padding: 0;
+}
+
+
+.noidungchinh .nd4 {
+    border: 1px solid #ccc;
+    margin-bottom: -11px;
+    margin-top: 10px;
+}
+
+
+ul.pagination {
+    list-style: none;
+    margin-left: 23%;
+}
+
+ul.pagination li {
+    float: left;
+    background: #fef5f5;
+    padding: 5px 14px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.col-xs-12.noidung3 {
+    padding: 19px;
+    margin-top: 14px;
+}
+
+.noidungphu .media {
+    border: 1px solid #cccccc;
+    margin: 2px;
+    padding: 18px 10px;
+    padding-bottom: 0;
+}
+
+.noidungphu p.label {
+    background: rgba(246, 99, 7, 0.79);
+    width: 69px;
+    font-size: 12px;
+    padding-left: 9px;
+    margin-top: 15px;
+    margin-left: 11px;
+}
+
+.noidungphu {
+    /* border: 1px solid #ccc; */
+    padding: 12px;
+    margin-top: 10px;
+}
+.noidungphu .ndp1{
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+
+.nd {
+    margin-top: 14px;
+    margin-bottom: 14px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+p.lead {
+    margin-bottom: 0px;
+}
+
+.footer p.lead {
+    font-size: 25px;
+}
+
+
+
+.noidungchinh h4 {
+    padding-left: 16px;
+    margin-top: 13px;
+}
+
+.comment h4.media-heading {
+    margin-left: -16px;
+    font-size: 25px;
+}
+
+.comment h4.media-heading small {
+    font-size: 11px;
+}
+
+.noidungchinh {
+    margin-top: 10px;
+    /* border: 1px solid #ccc; */
+    border-top: none;
+    padding: 12px;
+    /* padding-left: 0px; */
+    /* padding-right: 0px; */
+}
+.noidungchinh .nd3 .noidung3{
+    clear: both;
+    border: 1px solid #ccc;
+}
+.noidungchinh .nd3 img{
+    width: 200px;
+}
+@media screen and (max-width: 425px){
+    .col-xs-12.noidung3 .media .media-body .title{
+        margin-left: -205px;
+    }
+    .noidungchinh .nd4 ul.pagination {
+        margin-left: 10%;
+    }
+
+
+}
+
+@media screen and (max-width: 1005px){
+    .noidungphu{
+        /*display: none;*/
+    }
+}   
+@media screen and (min-width: 1005px){
+
+    .noidungchinh .noidung1{
+        border: none;
+        border-right: 1px solid #ccc;
+    }
+    .nd {
+    margin-top: 0px;
+    }
+    .menu2 .nav li.nav-item:hover{
+        background: #fff;
+        color: #ccc;
+    }
+}   
+
+
+.dropdown-menu a.dropdown-item {
+    color: #120c4c;
+    padding: 10px 18px;
+}
+
+.dropdown-menu a.dropdown-item:hover {
+    color: black;
+}
+
+.dropdown-menu {
+    margin-top: 0px;
+    margin-left: 0px;
+    border: none;
+    background: #2c94da;
+}
+
+
+.menu2 .nav li.nav-item{
+    margin: 0;
+    border-right: 1px solid #2c94da;
+    padding-right: 17px;
+    padding-left: 12px;
+}
+
+a.navbar-brand {
+    border-right: 1px solid #2c94da;
+    border-left: 1px solid #2c94da;
+    padding: 4px 17px;
+    /* background: #fff; */
+}
+@media screen and (max-width: 999px){
+    a.navbar-brand{
+        border: none;
+    }
+    .menu2 .nav li.nav-item{
+        border: none;
+        padding: 0px 9px;
+    }
+    .logo .quangcao img {
+        width:75%;
+        margin-left: 80px;    
+    }
+
+
+}
+
+.navbar-dark .navbar-brand, .navbar-dark .navbar-toggler a {
+    color: #0c0c0c;
+    margin: 0;    
+}
+
+
+
+
+.menu1,.menu2{
+    border-radius: 0;
+    padding: 0;
+}
+
+.bg-inverse {
+    background: #2c94da!important;
+}
+
+
+
+
+ul.mangxahoi li a {
+    margin-right: 25px;
+    float: left;
+}
+ul.mangxahoi li a span:hover{
+    border-bottom: 2px solid #2c94da;
+    padding-bottom: 2px;
+    color: blue;
+}
+
+@media screen and (max-width: 959px){
+    .chitiet img{
+        margin-left: 40px;
+    }
+}	

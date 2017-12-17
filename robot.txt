@@ -1,0 +1,7 @@
+User-agent: *//khong chan ai het
+Allow:
+Disallow: /admin
+Disallow: /model
+Disallow: /public
+Disallow: /core   
+//khong duoc truy cap
