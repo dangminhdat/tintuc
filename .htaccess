@@ -1,0 +1,32 @@
+# Bảo vệ file .htaccess
+<Files .htaccess>
+Order Allow,Deny
+Deny from all
+</Files>
+ 
+# Rewrite url
+RewriteEngine on
+#trang chu
+RewriteRule ^trang-chu$ index.php
+RewriteRule ^([a-zA-Z0-9_-]+)$ index.php?id_cate1=$1
+RewriteRule ^([a-zA-Z0-9_-]+)/$ index.php?id_cate1=$1
+
+RewriteRule ^([a-zA-Z0-9_-]+)/page/([0-9]+)$ index.php?id_cate1=$1&page=$2
+RewriteRule ^([a-zA-Z0-9_-]+)/page/([0-9]+)/$ index.php?id_cate1=$1&page=$2
+
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)$ index.php?id_cate1=$1&id_cate2=$2
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/$ index.php?id_cate1=$1&id_cate2=$2
+
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/page/([0-9]+)$ index.php?id_cate1=$1&id_cate2=$2&page=$2
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/page/([0-9]+)/$ index.php?id_cate1=$1&id_cate2=$2&page=$2
+
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)-([0-9]+).html$ index.php?id_cate1=$1&slug=$2&id_post=$3
+
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)-([0-9]+).html$ index.php?id_cate1=$1&id_cate2=$2&slug=$3&id_post=$4
+
+RewriteRule ^error.html$ index.php?id_cate1=404
+
+ErrorDocument 401 http://datdangtin.byethost17.com/error.html
+ErrorDocument 403 http://datdangtin.byethost17.com/error.html
+ErrorDocument 404 http://datdangtin.byethost17.com/error.html
+ErrorDocument 500 http://datdangtin.byethost17.com/error.html
