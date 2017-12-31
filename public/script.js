@@ -16,6 +16,10 @@
            $('html,body').animate({scrollTop: 0}, 500);
  	});
  	
+ 	$('.messenger').hide();
+ 	$('.nut-messenger').show();
+ 	$('.scroll').show();
+
  	$('.fa.fa-close.float-xs-right').on('click',function(){
  		$('.messenger').hide(1000);
  		$('.nut-messenger').show(500);

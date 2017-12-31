@@ -37,7 +37,7 @@ if(isset($_GET['id_cate1']) && isset($_GET['id_post']))
 	}
 	else
 	{
-		$title = "Trang tin tức tổng hợp - developer Dat Dang";
+		$title = $trang_thai_web['tieu_de'];
 	}
 ?>
 <!DOCTYPE html>

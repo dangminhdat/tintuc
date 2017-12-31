@@ -12,6 +12,12 @@
 								// print_r($tin);
 								
 								foreach ($tin as $key => $value) {
+									$hour = substr($value['ngay_tao'],11,2);
+									$minute = substr($value['ngay_tao'],14,2);
+									$day = substr($value['ngay_tao'],8,2);
+									$month = substr($value['ngay_tao'],5,2);
+									$year = substr($value['ngay_tao'],2,2);
+									$date = $hour.":".$minute." ".$day."/".$month."/".$year;
 									if(preg_match('#\,#',$value['cmuc']))
 										{
 											list($cate1,$cate2) = explode(',',$value['cmuc']);
@@ -30,9 +36,9 @@
 									</a>
 									<div class="media-body">
 										<p class="lead"><a href="<?=$cate1.'/'.$cate2.$value['slug'].'-'.$value['id_post'].'.html'?>"><?=$value['tieu_de']?></a></p>
-										<small><span class="fa fa-calendar"></span> 29/01/2017</small>
+										<small><span class="fa fa-calendar"></span> <?=$date?></small>
 										<small><span class="fa fa-comments"></span> <?=$c_tin_tuc->sumComment($value['id_post'])?> COMMENTS</small>
-										<small><span class="fa fa-view"></span> View: <?=$value['luot_xem']?></small>
+										<small><span class="fa fa-view"></span> <span class="fa fa-eye"> <?=$value['luot_xem']?></span></small>
 										<p class="title"><?=html_entity_decode(substr($value['mieu_ta'],0,117).'..')?></p>
 									</div>
 								</div>

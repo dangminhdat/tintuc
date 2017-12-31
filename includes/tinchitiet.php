@@ -6,6 +6,12 @@
 						<div class="chitiet" style="border-top: 1px solid #ccc"	>
 							<div class="chitietdau">
 								<?php
+									$hour = substr($tin['ngay_tao'],11,2);
+									$minute = substr($tin['ngay_tao'],14,2);
+									$day = substr($tin['ngay_tao'],8,2);
+									$month = substr($tin['ngay_tao'],5,2);
+									$year = substr($tin['ngay_tao'],2,2);
+									$date = $hour.":".$minute." ".$day."/".$month."/".$year;
 									if($tieu_de_chuyenmuc['cate_2']['ten_chuyen_muc'] != '')
 									{
 										$tieu_de_chuyenmuc['cate_1']['url'] .= '/';
@@ -13,9 +19,9 @@
 								?>
 								<h3><?=$tin['tieu_de']?></h3>
 		                		<small>Post by<i> admin</i></small>
-								<small><span class="fa fa-calendar"></span> <?=$tin['ngay_tao']?></small>
+								<small><span class="fa fa-calendar"></span> <?=$date?></small>
 								<small><span class="fa fa-comments"></span> <?=$c_tin_tuc->sumComment($tin['id_post'])?> COMMENTS</small>
-								<small><span class="fa fa-view"></span> Lượt xem: <?=$tin['luot_xem']?></small>
+								<small><span class="fa fa-view"></span> <span class="fa fa-eye"> <?=$tin['luot_xem']?></span></small>
 								<div class="fb-share-button" data-href="http://localhost/datdang/tttt/<?=$tieu_de_chuyenmuc['cate_1']['url'].$tieu_de_chuyenmuc['cate_2']['url'].'/'.$tin['slug'].'-'.$tin['id_post'].'.html'?>" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%2Fdatdang%2Ftttt%2F<?=str_replace('/','%2F',$tieu_de_chuyenmuc['cate_1']['url']).$tieu_de_chuyenmuc['cate_2']['url'].'%2F'.$tin['slug'].'-'.$tin['id_post'].'.html'?>&amp;src=sdkpreparse">Chia sẻ</a></div>
 							</div>	
 								

@@ -26,7 +26,7 @@ RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)-([0-9]+).html$ i
 
 RewriteRule ^error.html$ index.php?id_cate1=404
 
-ErrorDocument 401 http://datdangtin.byethost17.com/error.html
-ErrorDocument 403 http://datdangtin.byethost17.com/error.html
-ErrorDocument 404 http://datdangtin.byethost17.com/error.html
-ErrorDocument 500 http://datdangtin.byethost17.com/error.html
+ErrorDocument 401 http://datdangtin.byethost17.com/404
+ErrorDocument 403 http://datdangtin.byethost17.com/404
+ErrorDocument 404 http://datdangtin.byethost17.com/404
+ErrorDocument 500 http://datdangtin.byethost17.com/404

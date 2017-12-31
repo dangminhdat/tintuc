@@ -66,6 +66,12 @@
 			if($tintuc_timkiem)
 			{
 			foreach ($tintuc_timkiem as $key => $value) {
+				$hour = substr($value['ngay_tao'],11,2);
+				$minute = substr($value['ngay_tao'],14,2);
+				$day = substr($value['ngay_tao'],8,2);
+				$month = substr($value['ngay_tao'],5,2);
+				$year = substr($value['ngay_tao'],2,2);
+				$date = $hour.":".$minute." ".$day."/".$month."/".$year;
 				if(preg_match('#\,#',$value['cmuc']))
 				{
 					list($cate1,$cate2) = explode(',',$value['cmuc']);
@@ -78,13 +84,14 @@
 ?>
 			<div class="col-xs-12 noidung3">
 				<div class="media">	
-					<a class="media-left" href="chitiet.php?id_post=<?=$value['id_post'].'&id_cate1='.$cate1.'&id_cate2='.$cate2?>">
+					<a class="media-left" href="<?=$cate1.'/'.$cate2.'/'.$value['slug'].'-'.$value['id_post'].'.html'?>">
 						<img src="<?=$value['url']?>" class="media object img-fluid" alt="">
 					</a>
 					<div class="media-body">
-						<p class="lead"><a href="chitiet.php?id_post=<?=$value['id_post'].'&id_cate1='.$cate1.'&id_cate2='.$cate2?>"><?=$value['tieu_de']?></a></p>
-						<small><span class="fa fa-calendar"></span> JANUARY 29, 2017</small>
-						<small><span class="fa fa-comments"></span> 11 COMMENTS</small>
+						<p class="lead"><a href="<?=$cate1.'/'.$cate2.'/'.$value['slug'].'-'.$value['id_post'].'.html'?>"><?=$value['tieu_de']?></a></p>
+						<small><span class="fa fa-calendar"></span> <?=$date?></small>
+						<!-- <small><span class="fa fa-comments"></span> php COMMENTS</small> -->
+						<small><span class="fa fa-eye"> <?=$value['luot_xem']?></span></small>
 						<p class="title"><?=html_entity_decode(substr($value['mieu_ta'],0,117).'..')?></p>
 					</div>
 				</div>

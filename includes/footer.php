@@ -1,5 +1,5 @@
 		<div class="clearfix"></div>
-                 <div class="footer">
+        <div class="footer">
 			<div class="container">
 				<div class="row">
 
@@ -32,6 +32,21 @@
 							<a href=""><span class="fa fa-tags"></span> Categories</a>
 						</div>		
 					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="subfooter">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="copyright float-sm-left">
+								<p class="text-center">Copyright © ../../.... All rights reserved. Designed by <a href="http://dangminhdat.com">dangminhdat.com</a></p>
+						</div>
+						<div class="luot float-sm-right">
+							<small>Lượt xem: <span>2</span></small>
+						</div>
+					</div>	
 				</div>
 			</div>
 		</div>

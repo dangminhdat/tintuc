@@ -176,6 +176,16 @@ span.fa.fa-close.float-xs-right:hover{
     margin: 12px 0px;
 }
 
+form.form-inline.navbar-form.float-lg-right input[type="text"]{
+    padding: 1px;
+    margin-top: 11px;
+}
+form.form-inline.navbar-form.float-lg-right button{
+    margin-top: 11px;
+    padding: 0px 5px;
+    border-radius: 5px;
+}
+
 form.form-inline.navbar-form.float-lg-right {
     margin-left: -9px;
 }
@@ -186,7 +196,7 @@ form.form-inline.navbar-form.float-lg-right {
 
 
 .navbar-dark .navbar-nav .nav-link {
-    color: #0c0c0c!important;
+    color: #fff!important;
 }
 
 button.btn.btn-default.hidden-md-up {
@@ -194,13 +204,14 @@ button.btn.btn-default.hidden-md-up {
 }
 
 .navbar .menu1 ul.navbar-nav li.nav-item a.nav-link {
-    font-size: 20px;
-    color: #161616;
+    font-size: 16px;
+    color: #fff!important;
     font-weight: bold;
 }
 
 
 .footer .content a {
+    color: #fff;
     display: inline-block;
     padding: 9px 7px;
 }
@@ -214,6 +225,22 @@ button.btn.btn-default.hidden-md-up {
 
 }
 
+.subfooter{
+    background: #333;
+}
+.subfooter .luot{
+    color: #fff;
+}
+.subfooter .luot span{
+    padding: 0 4px;
+    background: #e24141;
+}
+
+.subfooter .copyright p{
+    font-size: 14px;
+    margin-bottom: 0;
+    color: #fff;
+}
 .footer ul {
     list-style: none;
     margin-top: -5px;
@@ -231,8 +258,8 @@ button.btn.btn-default.hidden-md-up {
 }
 
 .footer {
-    border: 1px solid #2c94da;
-    background: #333333;
+    border: 1px solid #0f2bb3;
+    background: #0f2bb3;
     color: white;
     margin-top: 10px;
 }
@@ -294,6 +321,9 @@ ul.pagination li {
     margin-bottom: 20px;
 }
 
+.nd p{
+    margin-bottom: 0;
+}
 
 .nd {
     margin-top: 14px;
@@ -352,29 +382,11 @@ p.lead {
 
 }
 
-@media screen and (max-width: 1005px){
-    .noidungphu{
-        /*display: none;*/
-    }
-}   
-@media screen and (min-width: 1005px){
-
-    .noidungchinh .noidung1{
-        border: none;
-        border-right: 1px solid #ccc;
-    }
-    .nd {
-    margin-top: 0px;
-    }
-    .menu2 .nav li.nav-item:hover{
-        background: #fff;
-        color: #ccc;
-    }
-}   
+  
 
 
 .dropdown-menu a.dropdown-item {
-    color: #120c4c;
+    color: #fff;
     padding: 10px 18px;
 }
 
@@ -386,46 +398,35 @@ p.lead {
     margin-top: 0px;
     margin-left: 0px;
     border: none;
-    background: #2c94da;
+    background: #0f2bb3;
 }
 
 
 .menu2 .nav li.nav-item{
     margin: 0;
-    border-right: 1px solid #2c94da;
+    border-right: 1px solid #0f2bb3;
     padding-right: 17px;
     padding-left: 12px;
 }
 
 a.navbar-brand {
-    border-right: 1px solid #2c94da;
-    border-left: 1px solid #2c94da;
+    border-right: 1px solid #0f2bb3;
+    border-left: 1px solid #0f2bb3;
     padding: 4px 17px;
     /* background: #fff; */
 }
-@media screen and (max-width: 999px){
-    a.navbar-brand{
-        border: none;
-    }
-    .menu2 .nav li.nav-item{
-        border: none;
-        padding: 0px 9px;
-    }
-    .logo .quangcao img {
-        width:75%;
-        margin-left: 80px;    
-    }
 
-
-}
 
 .navbar-dark .navbar-brand, .navbar-dark .navbar-toggler a {
-    color: #0c0c0c;
+    color: #fff;
     margin: 0;    
 }
 
 
-
+.menu1{
+    margin: -4px 0 -6px 0;
+    line-height: 29px;
+}
 
 .menu1,.menu2{
     border-radius: 0;
@@ -433,7 +434,7 @@ a.navbar-brand {
 }
 
 .bg-inverse {
-    background: #2c94da!important;
+    background: #0f2bb3!important;
 }
 
 
@@ -453,4 +454,40 @@ ul.mangxahoi li a span:hover{
     .chitiet img{
         margin-left: 40px;
     }
-}	
+} 
+@media screen and (max-width: 1005px){
+    .noidungphu{
+        /*display: none;*/
+    }
+}   
+@media screen and (min-width: 1005px){
+
+    .noidungchinh .noidung1{
+        border: none;
+        border-right: 1px solid #ccc;
+    }
+    .nd {
+    margin-top: 0px;
+    }
+    .menu2 .nav li.nav-item:hover{
+        background: #fff;
+    }
+    .menu2 .nav li.nav-item:hover a.nav-link{
+        color: #0f2bb3!important;
+    }
+} 
+@media screen and (max-width: 999px){
+    a.navbar-brand{
+        border: none;
+    }
+    .menu2 .nav li.nav-item{
+        border: none;
+        padding: 0px 9px;
+    }
+    .logo .quangcao img {
+        width:75%;
+        margin-left: 80px;    
+    }
+
+
+}

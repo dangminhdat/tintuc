@@ -24,7 +24,7 @@
 											</a>
 											<div class="media-body">
 												<p class="media-heading"><a href="<?=$cateC1.'/'.$cateC2.$value['slug'].'-'.$value['id_post'].'.html'?>"><?=$value['tieu_de']?></a></p>
-												<p>Lượt xem: <?=$value['luot_xem']?></p>
+												<p><span class="fa fa-eye"> <?=$value['luot_xem']?></span></p>
 											</div>
 										</div>
 							<?php
