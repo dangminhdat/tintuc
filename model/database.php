@@ -8,7 +8,7 @@ class database
 	private $hostname = 'datdangtin.byethost17.com',
 			$username = 'root',
 			$password = '',
-			$database = 'codethuan_tintuc';	
+			$database = 'codethuan_tintuc_v2';	
 
 	public $conn = '';
 
