@@ -85,7 +85,7 @@ class C_tin_tuc
 
 		$m_tin_tuc = new M_tin_tuc();
 		$tin_theo_loai = $m_tin_tuc->tin_theo_loai($id_cate,$id_cate_con);
-		$pager = new Pagination(count($tin_theo_loai),$page,2,4);
+		$pager = new Pagination(count($tin_theo_loai),$page,10,4);
 		$limit = $pager->limit;
 		$vitri = ($page - 1)*$limit;
 		$html_trang = $pager->show_html();

@@ -7,7 +7,7 @@
 		if(isset($_FILES['img_up']))
 		{
 			foreach ($_FILES['img_up']['name'] as $key => $value) {
-				$folder = '../upload';
+				$folder = '../upload/';
 				$name_file = stripslashes($_FILES['img_up']['name'][$key]);
 				$tmp_file = $_FILES['img_up']['tmp_name'][$key];
 
@@ -23,11 +23,11 @@
 				{
 					mkdir($folder.$year.'/'.$month.'/');
 				}
-				if(!is_dir($folder.'/'.$year.'/'.$month.'/'.$day))
+				if(!is_dir($folder.$year.'/'.$month.'/'.$day))
 				{
-					mkdir($folder.'/'.$year.'/'.$month.'/'.$day.'/');
+					mkdir($folder.$year.'/'.$month.'/'.$day.'/');
 				}
-				$path = $folder.'/'.$year.'/'.$month.'/'.$day.'/'.$name_file;
+				$path = $folder.$year.'/'.$month.'/'.$day.'/'.$name_file;
 
 				move_uploaded_file($tmp_file,$path);
 
@@ -46,7 +46,7 @@
 			}
 			echo "Thêm hình ảnh thành công";
 			$db->disconnect();
-			new Redirect($_DOMAIN.'photo');
+			// new Redirect($_DOMAIN.'photo');
 		}
 		if(isset($_POST['action']))
 		{
